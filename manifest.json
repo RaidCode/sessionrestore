@@ -1,8 +1,27 @@
 {
+	// Required
 	"manifest_version": 2,
 	"name": "Session restore",
-	"description": "Restores Chrome to where you left without loading all the tabs for a fast, efficient and smooth start.",
 	"version": "0.6.3",
+
+	// Recommended
+	"description": "Restores Chrome to where you left without loading all the tabs for a fast, efficient and smooth start.",
+	"icons": {
+		"128": "img/logo.png"
+	},
+
+	// Pick one (or none)
+	"browser_action": {
+		"default_icon": {
+			"38":"img/favicon.png"
+		},
+		"default_title": "Session restore"
+	},
+
+	// Optional
+	"background": {
+		"page": "back.html"
+	},
 	"options_page": "options.html",
 	"permissions": [
 		"tabs",
@@ -10,27 +29,11 @@
 		"storage",
 		"alarms"
 	],
-	"icons": {
-		"128": "img/logo.png"
-	},
-	"browser_action": {
-		"default_icon": {
-			"38":"img/favicon.png"
-		},
-		"default_title": "Session restore"
-	},
 	"web_accessible_resources": [
-		"css/options.css",
-		"newtab.html",
 		"js/newtab.js",
-		"css/newtab.css",
 		"js/backload.js",
 		"js/backsave.js",
-		"css/semantic.min.css",
 		"js/jquery.min.js",
 		"js/semantic.min.js"
-	],
-	"background": {
-		"page": "back.html"
-	}
+	]
 }
