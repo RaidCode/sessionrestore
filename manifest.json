@@ -15,7 +15,8 @@
 		"default_icon": {
 			"38":"img/favicon.png"
 		},
-		"default_title": "Session restore"
+		"default_title": "Session restore",
+		"default_popup": "options.html"
 	},
 
 	// Optional
