@@ -4,6 +4,10 @@ var extensionid = chrome.runtime.id;
 
 function loadtab(winarray) {
 	if(winarray.length == 1) {
+		var fpa;
+		chrome.storage.local.get("fpa", function(csldata) {
+			fpa = csldata.fpa;
+		});
 		chrome.storage.local.get('tabs', function(items) {
 			var tabsarray = items['tabs'];
 			if(typeof(tabsarray) != "undefined") {
@@ -12,7 +16,7 @@ function loadtab(winarray) {
 					data.title = tabsarray[j].title;
 					data.url = tabsarray[j].url;
 					data.pinned = tabsarray[j].pinned;
-					if(j == 0) data.load = true;
+					data.load = (data.pinned && fpa) ? true : false;
 					urls.push('chrome-extension://' + extensionid + '/newtab.html##' + JSON.stringify(data));
 					data.load = false;
 				}

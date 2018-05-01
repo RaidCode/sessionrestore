@@ -12,6 +12,7 @@ window.onload = function() {
 		icon.setAttribute('href', 'chrome://favicon/' + url);
 		document.getElementsByTagName('head')[0].appendChild(icon);
 		if(data.pinned) chrome.tabs.update(tab.id, {pinned: true});
+		data.load = (data.pinned && data.load) ? true : false;
 		if(data.load) window.location.href = url;
 	});
 }
