@@ -249,7 +249,7 @@
 }
 
 .tetromino {
-	background: url('data:image/svg+xml;utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 684.5"%3E%3Cpath fill="#010101" d="M305.7 0L0 171.2v342.3l305.7 171 306.3-171V171.2z"/%3E%3Cpath fill="#fff" d="M305.7 80.3l-233.6 131 233.6 131 234.2-131-234.2-131"/%3E%3C/svg%3E') no-repeat left center;
+	background: url('data:image/svg+xml;utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 684.5"%3E%3Cpath fill="%233498DB" d="M305.7 0L0 171.2v342.3l305.7 171 306.3-171V171.2z"/%3E%3Cpath fill="%23fff" d="M305.7 80.3l-233.6 131 233.6 131 234.2-131-234.2-131"/%3E%3C/svg%3E') no-repeat left center;
 	background-size: 24px auto;
 	width: 24px;
 	height: 26px;
