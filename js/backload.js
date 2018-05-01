@@ -1,5 +1,5 @@
 var urls = new Array();
-var data = {title: '', url: '', load: false, pinned:false};
+var data = {title: '', url: '', load: false, pinned: false};
 var extensionid = chrome.runtime.id;
 
 function loadtab(winarray) {
@@ -22,7 +22,7 @@ function loadtab(winarray) {
 				}
 				if(urls.length > 0) chrome.tabs.update(winarray[0].tabs[0].id, {url: urls[0]});
 				for(j = 1; j <= urls.length; j++) {
-					chrome.tabs.create({windowId:winarray[0].id, url:urls[j]});
+					chrome.tabs.create({windowId: winarray[0].id, url: urls[j]});
 				}
 			}
 		});
