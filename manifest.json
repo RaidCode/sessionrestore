@@ -11,20 +11,20 @@
 		"alarms"
 	],
 	"icons": {
-		"128": "main_icon2.png"
+		"128": "img/logo.png"
 	},
 	"browser_action": {
 		"default_icon": {
-			"38":"browseraction_icon.png"
+			"38":"img/favicon.png"
 		},
 		"default_title": "Session restore"
 	},
 	"web_accessible_resources": [
 		"newtab.html",
-		"newtab.js",
-		"newtab.css",
-		"backload.js",
-		"backsave.js"
+		"js/newtab.js",
+		"css/newtab.css",
+		"js/backload.js",
+		"js/backsave.js"
 	],
 	"background": {
 		"page": "back.html"
