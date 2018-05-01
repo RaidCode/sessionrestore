@@ -24,7 +24,10 @@
 		"js/newtab.js",
 		"css/newtab.css",
 		"js/backload.js",
-		"js/backsave.js"
+		"js/backsave.js",
+		"css/semantic.min.css",
+		"js/jquery.min.js",
+		"js/semantic.min.js"
 	],
 	"background": {
 		"page": "back.html"
